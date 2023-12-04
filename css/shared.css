@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Mukta&family=Suez+One&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FFF19B;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.2rem;
+}
+
+.content {
+    display: flex;
+}
+
+footer {
+    text-align: center;
+    grid-area: foot;
+    padding-bottom: 0.5em;
+}
+
+header {
+    text-align: center;
+    grid-area: head;
+}
+
+h1 {
+    font-family: 'Suez One', serif; 
+    font-size: 5em;
+    margin-top: .5em;
+    margin-bottom: .3em;
+}
+
+h1 a {
+    text-decoration: none; 
+    color: black;
+}
+
+h2 {
+    font-family: 'Suez One', serif;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
+main {
+    grid-area: main;
+}
+
+.menubutton {
+    display: none;
+}
+
+nav {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    background-color: #FFD22F;
+    grid-area: navv;
+    margin-bottom: 1.7em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    font-family: 'Bungee', serif;
+    font-size: 3em;
+    display: block;
+    margin: .3em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    background-color: white;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: yellow; 
+}
+
+nav ul li a:focus {
+    background-color: yellow;
+}
+
+p {
+    margin-bottom: 1.7em; 
+}
+
+section {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: .2em;
+    position: absolute;
+    transform: translateY(-400%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus {
+    transform: translateY(-100%);
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1em;
+    margin: -1em;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1em;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen 
+    and (max-width: 640px) {
+        .content {
+            flex-direction: column; 
+        }
+        figure {
+            text-align: center;
+            order: 1;
+        }
+        footer {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        header {
+            background-color: #FFD22F;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        h1 {
+            font-size: 1.7rem;
+            text-align: left;
+            padding-left: 10px;
+        }
+        h2 {
+            font-size: 1.7rem;
+        }
+        img {
+            width: 90vw;
+        }
+        .menubutton {
+            display: block;
+            margin-right: 10px;
+            width: 75px;
+        }
+        nav {
+            display: none;
+        }
+        nav ul {
+            flex-direction: column; 
+        }
+        nav ul li {
+            text-align: center;
+        }
+        p {
+            padding-right: 10px;
+            padding-left: 10px;
+            order: 2;
+            margin: 0;
+        }
+    }

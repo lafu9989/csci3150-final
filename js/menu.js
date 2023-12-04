@@ -1,0 +1,8 @@
+function showMenu() {
+    var x = document.getElementById("navigation");
+    if (x.style.display == "" || x.style.display == "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}

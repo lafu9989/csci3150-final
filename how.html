@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Universal Design - HOW</title>
         <link rel="stylesheet" href="css/shared.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" >
         <script src="js/menu.js"></script>
     </head>
     <body>
         <a class="skip-link" href="#maincontent">Skip to main content</a>
         <div class="wrapper">
-            <header>
+            <header id="header">
                 <h1><a href="index.html">Universal Design</a></h1>
                 <button class="menubutton" onclick="showMenu()">
                     <span class="material-symbols-outlined">
@@ -30,37 +30,50 @@
             <main id="maincontent">
                 <section>
                     <h2>How is Universal Design implemented on the web?</h2>
-                    <div class="content">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, laboriosam, alias incidunt illo distinctio neque totam culpa facere odit rem adipisci. Cupiditate non minus molestias neque ducimus sunt esse adipisci?</p>
-                        <figure>
-                            <img src="https://placekitten.com/450/300" alt="some alt text"/>
-                            <figcaption>placeholder kitten!</figcaption>
-                        </figure>
-                    </div>
-                </section>
-                <section>
-                    <h2>What about other forms of digital media?</h2>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt placeat ex dicta, voluptates inventore quidem voluptatem, officia praesentium magnam adipisci debitis? A facilis doloremque enim quasi excepturi, quae cumque.</p>
-                        <figure>
-                            <img src="https://placekitten.com/200/300" alt="some alt text"/>
-                            <figcaption>placeholder kitten!</figcaption>
-                        </figure>
-                    </div>
-                </section>
-                <section>
-                    <h2>Future advances for Universal Design</h2>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis temporibus ea omnis saepe repudiandae sed exercitationem nostrum iusto ipsa facilis, unde id error fugit tenetur assumenda, vero eos voluptate.</p>
-                        <figure>
-                            <img src="https://placekitten.com/500/300" alt="some alt text"/>
-                            <figcaption>placeholder kitten!</figcaption>
-                        </figure>
-                    </div>
+                    <section>
+                        <div class="content">
+                            <div class="text">
+                                <h3>Using HTML</h3>
+                                <p>Hypertext Markup Language (HTML) is the markup language used in every single page on the Web. One of the fundamentals of HTML is semantic tagging, which involves enclosing content on a webpage within tags that describe the purpose of the content. For example, a <code>&lt;p&gt;</code> tag in HTML is used to enclose paragraph content, while a <code>&lt;img&gt;</code> tag is used for images.</p>
+                                <p>Using these tags as intended is a good first step towards creating websites that are logically structured. Like other examples of Universal Design, semantic tagging not only helps users who may not be able to see to determine where content is located on a page, but also helps webpages to appear higher in search results, benefitting almost all users.</p>
+                                <p>Attributes in HTML can also provide accessibility features; for example, the <code>alt</code> attribute on an image tag allows for alternative text to be provided for an image, allowing users who may not be able to see the image to understand the information or context it provides. This not only helps non-sighted users, but also users whose internet may be slow, causing the images to load incorrectly or not at all. </p>
+                            </div>
+                            <figure>
+                                <img src="images/semantictags.jpg" alt="comparison of website layout with and without semantic tagging">
+                                <figcaption>Semantic tagging in HTML helps make page sections more clear, especially for non-sighted users. Image credit: <a href="https://medium.com/codex/what-is-semantic-markup-and-why-you-should-use-it-44777543c29c" target="_blank" rel="noreferrer noopener">Sumudu Siriwardana</a>.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="content">
+                            <figure>
+                                <img src="images/cssgrid.jpg" width="500" height="300" alt="examples of mobile, tablet, and desktop layouts made with css grids">
+                                <figcaption>Layouts generated by a CSS grid design are responsive to different screen sizes. Image credit: <a href="https://www.creativebloq.com/advice/a-comprehensive-guide-to-using-css-grid" target="_blank" rel="noreferrer noopener">Ahmed Abuelgasim</a>.</figcaption>
+                            </figure>
+                            <div class="text">
+                                <h3>Using CSS</h3>
+                                <p>In addition to semantic tagging, web designers can use Cascading Style Sheets (CSS) to add styling to their sites, ensuring that content is easy to read. This can involve choosing color schemes with good color contrast, making sure lines are spaced evenly, and styling different sections of the page to indicate a difference in content.</p>
+                                <p>CSS grids can also be used to implement responsive design, which allows a webpage to appear optimally on screens of all sizes. This is especially important as users access the web from smaller screens, such as mobile phones and tablets, more and more often.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="content">
+                            <div class="text">
+                                <h3>Other tips and tricks</h3>
+                                <p>Various other methods can be used to create accessible websites. The <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noreferrer noopener">Web Accessibility Initiative's Accessible Rich Internet Applications (WAI-ARIA)</a> suite provides additional attributes and roles that can be added to HTML elements to make them more accessible to screen readers and other assistive technology.</p>
+                                <p>In addition, various CSS tricks can be used to create accessible features, such as skip navigation links, which allow users navigating a page with a keyboard to skip the navigation menu of a page and focus directly on the main content of a page. Screen reader-only styles can also be created to provide extra detail for screen reader users that may be superfluous or unnecessary for non-screen reader users.</p>
+                            </div>
+                            <figure>
+                                <img src="images/skipnav.png" alt="a screenshot of a skip navigation button on WebAIM's website">
+                                <figcaption>An example of a skip navigation link on <abbr title="Web Accessibility In Mind">WebAIM</abbr>'s website. Image credit: <a href="https://webaim.org/" target="_blank" rel="noreferrer noopener">WebAIM</a>.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
                 </section>
             </main>
             <footer>
-                <small>Made by Lauren Funston for CSCI 3150: Universal Design for Digital Media, 2023.</small>
+                <small>Made by <a href="https://github.com/lafu9989" target="_blank" rel="noreferrer noopener">Lauren Funston</a> for CSCI 3150: Universal Design for Digital Media, 2023.</small>
             </footer>
         </div>
     </body>

@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Universal Design - WHAT</title>
         <link rel="stylesheet" href="css/shared.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" >
         <script src="js/menu.js"></script>
     </head>
     <body>
         <a class="skip-link" href="#maincontent">Skip to main content</a>
         <div class="wrapper">
-            <header>
+            <header id="header">
                 <h1><a href="index.html">Universal Design</a></h1>
                 <button class="menubutton" onclick="showMenu()">
                     <span class="material-symbols-outlined">
@@ -31,36 +31,50 @@
                 <section>
                     <h2>What is Universal Design?</h2>
                     <div class="content">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, laboriosam, alias incidunt illo distinctio neque totam culpa facere odit rem adipisci. Cupiditate non minus molestias neque ducimus sunt esse adipisci?</p>
+                        <div class="text">
+                            <p>Universal Design is an approach to the design process that strives to create designs accessible to a diversity of users, including users with a wide range of abilities.</p>
+                            <blockquote>
+                                <p>A Universal Design approach considers the needs of the diverse range of abilities of users in order to create a design that meets the needs of as many people as possible, including people with disabilities.</p>
+                                <footer>- Howard Kramer, <cite>Universal Design for Digital Media</cite> (2014)</footer>
+                            </blockquote>
+                            <p>Though Universal Design is commonly associated with accessibility efforts, it is broader in scope than Accessible Design. Accessible Design focuses on making designs accessible to disabled users, while Universal Design strives to create designs that work well for <em>everyone</em>. This involves fundamentals of the design, such as usability, as well as designing for a range of abilities.</p>
+                            <p>Universal Design recognizes that all users' abilities and needs are fluid and may change depending on the user's environment and life circumstance. While Accessible Design mostly benefits disabled users, a Universal Design approach tends to benefit <em>all</em> users, regardless of ability.</p>
+                        </div>
                         <figure>
-                            <img src="https://placekitten.com/450/300" alt="some alt text"/>
-                            <figcaption>placeholder kitten!</figcaption>
+                            <img src="images/curbcut.jpg" width="450" height="300" alt="a curb cut in a neighborhood sidewalk">
+                            <figcaption>The "curb cut effect" is an example of Universal Design. While curb cuts are intended to provide easier access to sidewalks for wheelchair users, they also help anyone who needs to roll anything up or down the curb, such as parents pushing strollers. Image credit: <a href="https://uxdesign.cc/the-curb-cut-effect-universal-design-b4e3d7da73f5" target="_blank" rel="noreferrer noopener">Emma Sheridan</a>.</figcaption>
                         </figure>
                     </div>
                 </section>
                 <section>
                     <h2>What does Universal Design mean on the web?</h2>
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt placeat ex dicta, voluptates inventore quidem voluptatem, officia praesentium magnam adipisci debitis? A facilis doloremque enim quasi excepturi, quae cumque.</p>
                         <figure>
-                            <img src="https://placekitten.com/200/300" alt="some alt text"/>
-                            <figcaption>placeholder kitten!</figcaption>
+                            <img src="images/captions.png" width="400" height="300" alt="screenshot of a video on the web with captions">
+                            <figcaption>Video captions are an example of the "curb cut effect" on the Web. Captions help deaf and hard-of-hearing users who are unable to hear the content of the video, but they also aid anyone who may be watching the video in a noisy environment, or who simply processes written text faster than auditory input. Image credit: <a href="https://www.w3.org/WAI/media/av/captions/" target="_blank" rel="noreferrer noopener"><abbr title="World Wide Web Consortium Web Accessibility Initative">W3C-WAI</abbr></a>.</figcaption>
                         </figure>
+                        <div class="text">
+                            <p>It's hard to imagine a life without the Internet; nearly everyone's daily tasks involve using the Internet in some way. When websites aren't accessible, it can be extremely detrimental to the quality of life of users.</p>
+                            <p>By making websites which are accessible through a variety of means, web designers can ensure that their content reaches as many people as possible. This benefits disabled users, who will be able to access the website content in the format of their choice. But it also benefits all users who may temporarily be in situations where they cannot interact with a website as they normally would.</p>
+                        </div>
                     </div>
                 </section>
                 <section>
                     <h2>What about other forms of digital media?</h2>
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis temporibus ea omnis saepe repudiandae sed exercitationem nostrum iusto ipsa facilis, unde id error fugit tenetur assumenda, vero eos voluptate.</p>
+                        <div class="text">
+                            <p>While the Web is important, it is not the only form of digital media that exists. Notably, mobile devices such as phones and tablets are increasingly used to access digital content. These devices, while capable of accessing the Web, usually have applications that are installed to the device which provide various functionalities.</p>
+                            <p>These can present unique challenges in designing for all abilities, but also unique opportunities. Apps can provide a more focused experience than a website and are typically used for different purposes. Understanding these differences can help make using mobile apps a more inclusive experience. Ultimately, the principles of Universal Design can be applied to websites, apps, and any other user interface for digital media. While the specifics of the implementation may differ, the overall goal should be the same: to provide a consistent experience for users across all abilities, environments, and experiences.</p>
+                        </div>
                         <figure>
-                            <img src="https://placekitten.com/500/300" alt="some alt text"/>
-                            <figcaption>placeholder kitten!</figcaption>
+                            <img src="images/applewatch.jpg" alt="an iPhone mirroring the display of an apple watch">
+                            <figcaption>In a set of accessibility updates last year (2022), Apple introduced the ability to access an Apple Watch's screen from an iPhone, allowing users with physical and/or motor disabilities to use iPhone features such as VoiceOver, voice commands, and various other input options to control their watches. Image credit: <a href="https://www.apple.com/newsroom/2022/05/apple-previews-innovative-accessibility-features/" target="_blank" rel="noreferrer noopener">Apple</a>.</figcaption>
                         </figure>
                     </div>
                 </section>
             </main>
             <footer>
-                <small>Made by Lauren Funston for CSCI 3150: Universal Design for Digital Media, 2023.</small>
+                <small>Made by <a href="https://github.com/lafu9989" target="_blank" rel="noreferrer noopener">Lauren Funston</a> for CSCI 3150: Universal Design for Digital Media, 2023.</small>
             </footer>
         </div>
     </body>
